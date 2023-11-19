@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECMAScript modules</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Для полдключения JS-модуля  по стандарту ECMAScript необходимо добавить
+        в тег script дополнительный атрибут type со значением model-->
+    <script src="my_app.js" type="module"></script>
+    <pre>
+        <code>
+            import './lib.js';
+
+            // экспорт функций и классов
+            export class className {};
+
+            // экспорт переменных
+            export const varName = 'value';
+
+            // default export
+            const defaultClass = new className();
+            export default defaultClass;
+
+            console.log('script1 excuted')
+        </code>
+    </pre>
+</body>
+</html>

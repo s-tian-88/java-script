@@ -1,0 +1,21 @@
+{
+  "name": "es_modules",
+  "version": "1.0.0",
+  "description": "ECMAScript modules",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server .",
+    "lint": "eslint ."
+  },
+  "author": "stian",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "http-server": "^14.1.1"
+  }
+}

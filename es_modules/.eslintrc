@@ -1,0 +1,30 @@
+// defaulr eslint config with airbnb 
+
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "airbnb-base",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules" : {
+        "import/extensions": [
+            "error",
+            "ignorePackages"
+        ], // неободимое правило для импорта модулей без ошибки eslint
+        "import/no-duplicates": "off",
+        "max-len": "off",
+        "no-console": "off",
+        "semi": "off",
+        "no-extra-semi": "off",
+        "no-unused-vars": "off",
+        "new-cap": "off"
+    }
+}
