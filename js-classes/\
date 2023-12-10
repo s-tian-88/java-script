@@ -175,31 +175,17 @@ const getMedhodBind = getMethod.bind(product); // this -> product
         }
     }
 
-    Messenger.recipients = [ // добавление свойства
-      001,
-      002,
-      003,
-    ];
-
     class MultiMessenger extends Messenger { // создание дочернего класса
         consructor(name, logo) { // инициализация экземпляра дочернего класса
             super(name); // обращение к конструктору родительского класса
             this.logo = logo; // добавление уникальных свойств дочернего класса
-        }
-
-        send(recipient, msg) { // переопределение метода
-            if (Messenger.recipients.includes(recipient)) {
-                super.send(recipient, msg); // вызов родительского метода
-                return;
-            }
-            console.log(`Message from MultiMessenger: ${recipient}: ${msg}`)
         }
     }
 
     const viber = new MultiMessenger('Viber', 'V-logo') // создание экземполяра класса
 
     ```
-    > ```super()``` можно использовть только в конструкторе и только первым вызовом
+    > ```super() можно использовть только в конструкторе и только первым вызовом```
 ---
 
 ### Классы
